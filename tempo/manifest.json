@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Tempo",
+  "version": "1.0",
+  "description": "YouTube Music statistic tracker & themes.",
+  "icons": {
+    "16": "icon.jpg",
+    "48": "icon.jpg",
+    "128": "icon.jpg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://music.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
