@@ -10,6 +10,12 @@ Tempo is an open-source YouTube Music statistic tracker, completely finetuned wi
 4. Generatable image that shows all your stats, ready to share
 5. No download required, copy and paste into tampermonkey
 
+## Installation Options
+All methods to install tempo:
+- You can install **tempo ♫** manually by following the instructions below. This will lead you to installing tampermonkey, then importing the script.
+- If you already have [Tampermonkey](https://www.tampermonkey.net) in your chrome extensions, simply install it using GreasyFork. Details below aswell.
+- As chrome extension: download the **tempo** folder, and then import it in the extensions page. **Warning: tempo was not built to operate as chrome extension, and you may encounter bugs.**
+
 
 ## Manual Installation
 1. Install the **tempo.js** file
@@ -27,6 +33,13 @@ You can also directly install the script using Greasy Fork.
 1. Head over to our [page on Greasy Fork]([https://airstudios.nl/muffincord](https://greasyfork.org/en/scripts/591320-tempo))
 2. Click **Install this script**
 3. Click **Install** one last time
+
+# Tempo as chrome extension
+We've prepared a folder for you so you can directly import it to **chrome://extensions** and use it.
+1. Head to [chrome://extensions](chrome://extensions)
+2. Ensure **Developer Mode** is on (slider top right)
+3. Click **Load unpacked** and upload that **tempo** folder
+4. Now, tempo should be running like a normal chrome extension. Be aware it's not officialy supported and tempo was built for Tampermonkey.
 
 ## License
 tempo is property of [AIRSTUDIOS Corporation](https://airstudios.nl).
