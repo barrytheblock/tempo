@@ -35,7 +35,7 @@ You can also directly install the script using Greasy Fork.
 3. Click **Install** one last time
 
 ## Tempo as Chrome extension
-We've prepared a folder for you so you can directly import it to **Chrome://extensions** and use it.
+We've prepared a folder for you so you can directly import it to **chrome://extensions** and use it.
 1. Head to [Chrome://extensions](Chrome://extensions)
 2. Ensure **Developer Mode** is on (slider top right)
 3. Click **Load unpacked** and upload that **tempo** folder
