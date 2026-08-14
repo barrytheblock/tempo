@@ -2,6 +2,7 @@
 
 Tempo is an open-source YouTube Music statistic tracker, completely finetuned with streaks, charts, themes and share features.
 
+<img width="1856" height="337" alt="banner" src="https://github.com/user-attachments/assets/bf787eec-dfaf-4f85-9d70-c37fc9442c81" />
  
 ## Features
 1. Over 9+ panel themes
