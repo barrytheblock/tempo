@@ -1,16 +1,25 @@
-MIT License
+MIT License with Additional Terms
 
 Copyright (c) 2026 AIRSTUDIOS
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+to use, copy, modify, merge, publish, distribute, and/or modify
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
+1. The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+2. COMMERCIAL USE PROHIBITED: Neither the Software nor any modified, merged, or 
+derivative works based upon the Software may be sold, sublicensed, monetized, 
+or used directly for financial gain.
+
+3. BRANDING AND NAMING RESTRICTIONS: Any modified versions or derivative works 
+must prominently credit AIRSTUDIOS as the original creator. Furthermore, derivative 
+works may not use the original product or brand name in a way that implies endorsement 
+or misleads users into thinking it is the official product.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
