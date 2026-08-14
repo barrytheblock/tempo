@@ -2,7 +2,11 @@
 
 Tempo is an open-source YouTube Music statistic tracker, completely finetuned with streaks, charts, themes and share features.
 
-<img width="1644" height="320" alt="page-banner" src="https://github.com/user-attachments/assets/b7966042-7074-4c5b-8d09-46a4bcb9284b" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/b7966042-7074-4c5b-8d09-46a4bcb9284b">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/b7966042-7074-4c5b-8d09-46a4bcb9284b">
+  <img alt="page-banner" src="https://github.com/user-attachments/assets/b7966042-7074-4c5b-8d09-46a4bcb9284b" width="100%">
+</picture>
 
 ## Features
 1. Over 9+ panel themes
@@ -14,7 +18,7 @@ Tempo is an open-source YouTube Music statistic tracker, completely finetuned wi
 ## Installation Options
 All methods to install tempo:
 - You can install **tempo ♫** manually by following the instructions below. This will lead you to installing tampermonkey, then importing the script.
-- If you already have [Tampermonkey](https://www.tampermonkey.net) in your Chrome extensions, simply install it using GreasyFork. Details below aswell.
+- If you already have [Tampermonkey](https://www.tampermonkey.net) in your Chrome extensions, simply install it using GreasyFork. Details below as well.
 - As Chrome extension: download the **tempo** folder, and then import it in the extensions page. **Warning: tempo was not built to operate as Chrome extension, and you may encounter bugs.**
 
 
@@ -31,16 +35,16 @@ All methods to install tempo:
 
 ## Direct Install
 You can also directly install the script using Greasy Fork.
-1. Head over to our [page on Greasy Fork]([https://airstudios.nl/muffincord](https://greasyfork.org/en/scripts/591320-tempo))
+1. Head over to our [page on Greasy Fork](https://greasyfork.org/en/scripts/591320-tempo)
 2. Click **Install this script**
 3. Click **Install** one last time
 
 ## Tempo as Chrome extension
 We've prepared a folder for you so you can directly import it to **chrome://extensions** and use it.
-1. Head to [Chrome://extensions](Chrome://extensions)
+1. Head to `chrome://extensions`
 2. Ensure **Developer Mode** is on (slider top right)
 3. Click **Load unpacked** and upload that **tempo** folder
-4. Now, tempo should be running like a normal Chrome extension. Be aware it's not officialy supported and tempo was built for Tampermonkey.
+4. Now, tempo should be running like a normal Chrome extension. Be aware it's not officially supported and tempo was built for Tampermonkey.
 
 ## License
 tempo is property of [AIRSTUDIOS Corporation](https://airstudios.nl).
