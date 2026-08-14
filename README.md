@@ -22,13 +22,13 @@ Tempo is an open-source YouTube Music statistic tracker, completely finetuned wi
 8. Click Right Shift to open the panel
 9. All set!
 
-# Direct Install
+## Direct Install
 You can also directly install the script using Greasy Fork.
-1. Head over to our [page on Greasy Fork](https://airstudios.nl/muffincord)
+1. Head over to our [page on Greasy Fork]([https://airstudios.nl/muffincord](https://greasyfork.org/en/scripts/591320-tempo))
 2. Click **Install this script**
 3. Click **Install** one last time
 
-# License
+## License
 tempo is property of [AIRSTUDIOS Corporation](https://airstudios.nl).
 - tempo is allowed to be modified as it is open source.
 - You are required to keep in tempo and AIRSTUDIOS brand name to all modified versions.
