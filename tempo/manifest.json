@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Tempo",
+  "name": "tempo",
   "version": "1.0",
   "description": "YouTube Music statistic tracker & themes.",
   "icons": {
