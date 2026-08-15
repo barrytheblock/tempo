@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         tempo
 // @namespace    https://airstudios.nl/
-// @version      0.4.1
+// @version      1.0.0
 // @description  YouTube Music statistic tracker & themes.
 // @author       barrytheblock
 // @match        https://music.youtube.com/*
@@ -608,9 +608,18 @@ function buildAppOverrideCSS(theme) {
     return streak;
   }
 
+  function getArtistLastArt(scrobbles) {
+    const map = new Map();
+    scrobbles.forEach(s => {
+      if (s.art) map.set(s.artist, s.art);
+    });
+    return map;
+  }
+
   function getArtistStreaks() {
     const scrobbles = loadScrobbles();
     const artistDays = computeArtistDays(scrobbles);
+    const artistArt = getArtistLastArt(scrobbles);
     const today = getLocalDateKey(Date.now());
     const yesterday = getLocalDateKey(Date.now() - 86400000);
     const out = [];
@@ -620,7 +629,7 @@ function buildAppOverrideCSS(theme) {
       let status = 'ended';
       if (lastDay === today) status = 'active';
       else if (lastDay === yesterday) status = 'atRisk';
-      out.push({ artist, streak, lastDay, status });
+      out.push({ artist, streak, lastDay, status, art: artistArt.get(artist) || '' });
     });
     return out.filter(s => s.streak >= 2 && s.status !== 'ended').sort((a, b) => b.streak - a.streak);
   }
@@ -906,6 +915,9 @@ function buildAppOverrideCSS(theme) {
     .ytt-streak-list { display:flex; flex-direction:column; gap: 10px; }
     .ytt-streak-row { display:flex; align-items:center; gap: 12px; background: var(--ytt-surface,#1e1e1e); border: 1px solid var(--ytt-border,#333); border-radius: 12px; padding: 12px 14px; }
     .ytt-streak-fire { font-size: 20px; flex-shrink: 0; }
+    .ytt-streak-avatar { width: 36px; height: 36px; border-radius: 50%; overflow: hidden; flex-shrink: 0; background: var(--ytt-bg2,#222); display:flex; align-items:center; justify-content:center; }
+    .ytt-streak-avatar img { width: 100%; height: 100%; object-fit: cover; display:block; }
+    .ytt-streak-avatar-fallback { font-size: 14px; font-weight: 700; color: var(--ytt-text2,#999); }
     .ytt-streak-info { flex: 1; min-width: 0; }
     .ytt-streak-artist { font-size: 14px; font-weight: 600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .ytt-streak-status { font-size: 11px; margin-top: 2px; }
@@ -1185,15 +1197,37 @@ function buildAppOverrideCSS(theme) {
   }
 
   function streakStatusLabel(s) {
-    if (s.status === 'active') return 'Listened today — keep it up!';
-    return "Haven't listened today — listen to keep it alive!";
+    if (s.status === 'active') return 'Last listened today';
+    return "Last listened yesterday";
+  }
+
+  function streakAvatarFallback(artist) {
+    return el('div', { class: 'ytt-streak-avatar-fallback' }, [(artist.trim()[0] || '?').toUpperCase()]);
+  }
+
+  function streakAvatar(s) {
+    const wrap = el('div', { class: 'ytt-streak-avatar' }, []);
+    if (s.art) {
+      const img = el('img', {
+        src: s.art,
+        alt: s.artist,
+        onerror: () => {
+          img.remove();
+          wrap.appendChild(streakAvatarFallback(s.artist));
+        }
+      });
+      wrap.appendChild(img);
+    } else {
+      wrap.appendChild(streakAvatarFallback(s.artist));
+    }
+    return wrap;
   }
 
   function renderStreaks(main) {
     main.appendChild(el('div', { class: 'ytt-header' }, [
       el('div', {}, [
         el('h1', { class: 'ytt-greeting' }, ['Streaks']),
-        el('div', { class: 'ytt-subtext' }, ['Listen to the same artist 2+ days in a row to start one.'])
+        el('div', { class: 'ytt-subtext' }, ["Keep track of how many times in a row you've been listening to your favorite artists."])
       ])
     ]));
 
@@ -1201,13 +1235,13 @@ function buildAppOverrideCSS(theme) {
 
     if (!streaks.length) {
       main.appendChild(el('div', { class: 'ytt-panel-block' }, [
-        el('div', { class: 'ytt-streak-empty' }, ['No active streaks yet — listen to an artist two days in a row to start one 🔥'])
+        el('div', { class: 'ytt-streak-empty' }, ['You have no streaks.'])
       ]));
       return;
     }
 
     const list = el('div', { class: 'ytt-streak-list' }, streaks.map(s => el('div', { class: 'ytt-streak-row' }, [
-      el('div', { class: 'ytt-streak-fire' }, ['🔥']),
+      streakAvatar(s),
       el('div', { class: 'ytt-streak-info' }, [
         el('div', { class: 'ytt-streak-artist' }, [s.artist]),
         el('div', { class: `ytt-streak-status ${s.status}` }, [streakStatusLabel(s)])
