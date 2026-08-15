@@ -1,14 +1,16 @@
 // ==UserScript==
 // @name         tempo
 // @namespace    https://airstudios.nl/
-// @version      1.0.0
-// @description  YouTube Music statistic tracker & themes.
+// @version      1.1.0
+// @description  YouTube Music statistic tracker & themes, with AIRSTUDIOS Cloud sync.
 // @author       barrytheblock
 // @match        https://music.youtube.com/*
 // @icon         data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjggMjkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjgiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iNiIgeT0iMSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMyIgeT0iMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iNSIgeT0iMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMyIgeT0iNCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iNSIgeT0iNCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTEiIHk9IjQiIHdpZHRoPSI2IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIiIHk9IjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjE0IiB5PSI1IiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxIiB5PSI2IiB3aWR0aD0iNyIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxNCIgeT0iNiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMSIgeT0iNyIgd2lkdGg9IjciIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTEiIHk9IjciIHdpZHRoPSI2IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjExIiB5PSI4IiB3aWR0aD0iNiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMCIgeT0iOSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjAiIHk9IjEwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxOSIgeT0iMTEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIxIiB5PSIxMSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTEiIHk9IjEyIiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxOCIgeT0iMTIiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIxIiB5PSIxMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTAiIHk9IjEzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxMiIgeT0iMTMiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjE3IiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjEiIHk9IjEzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI5IiB5PSIxNCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTIiIHk9IjE0IiB3aWR0aD0iNiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMSIgeT0iMTQiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjYiIHk9IjE1IiB3aWR0aD0iMyIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxMyIgeT0iMTUiIHdpZHRoPSI0IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIxIiB5PSIxNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjMiIHk9IjE1IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI0IiB5PSIxNiIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iOCIgeT0iMTYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjE0IiB5PSIxNiIgd2lkdGg9IjMiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjIiIHk9IjE2IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyNCIgeT0iMTYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjMiIHk9IjE3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI3IiB5PSIxNyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjMiIHk9IjE3IiB3aWR0aD0iMyIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyIiB5PSIxOCIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iNyIgeT0iMTgiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIzIiB5PSIxOCIgd2lkdGg9IjMiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMiIgeT0iMTkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjciIHk9IjE5IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMyIgeT0iMTkiIHdpZHRoPSIzIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjEiIHk9IjIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI3IiB5PSIyMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjIiIHk9IjIwIiB3aWR0aD0iNSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIwIiB5PSIyMSIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iNyIgeT0iMjEiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjEwIiB5PSIyMSIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjAiIHk9IjIxIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyNSIgeT0iMjEiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjAiIHk9IjIyIiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI4IiB5PSIyMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTAiIHk9IjIyIiB3aWR0aD0iNSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxOSIgeT0iMjIiIHdpZHRoPSIzIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIzIiB5PSIyMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjUiIHk9IjIyIiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIwIiB5PSIyMyIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iOCIgeT0iMjMiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjEyIiB5PSIyMyIgd2lkdGg9IjQiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTkiIHk9IjIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMyIgeT0iMjMiIHdpZHRoPSI1IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjAiIHk9IjI0IiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI5IiB5PSIyNCIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTYiIHk9IjI0IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMiIgeT0iMjQiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjQiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMCIgeT0iMjUiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjEwIiB5PSIyNSIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTgiIHk9IjI1IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMCIgeT0iMjUiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIzIiB5PSIyNSIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjYiIHk9IjI1IiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxIiB5PSIyNiIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTEiIHk9IjI2IiB3aWR0aD0iOSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMiIgeT0iMjYiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjI2IiB5PSIyNiIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMiIgeT0iMjciIHdpZHRoPSI3IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjE1IiB5PSIyNyIgd2lkdGg9IjUiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjIiIHk9IjI3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyNSIgeT0iMjciIHdpZHRoPSIzIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjgiIHk9IjI4IiB3aWR0aD0iOSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxOSIgeT0iMjgiIHdpZHRoPSI4IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjwvc3ZnPg==
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_registerMenuCommand
+// @grant        GM_xmlhttpRequest
+// @connect      airstudios.nl
 // @run-at       document-idle
 // ==/UserScript==
 
@@ -29,6 +31,14 @@
     suppressNamePrompt: false
   };
 
+
+  const GM_KEYS = {
+    settings: NS + 'settings',
+    scrobbles: NS + 'scrobbles',
+    streakState: NS + 'streakState',
+    cloud: NS + 'cloud'
+  };
+
   function loadJSON(key, fallback) {
     try {
       const raw = GM_getValue(key, null);
@@ -40,32 +50,215 @@
     }
   }
 
-  function saveJSON(key, value) {
+  function writeJSON(key, value) {
     try {
       GM_setValue(key, JSON.stringify(value));
+      return true;
     } catch (e) {
       console.error('[Tempo] failed to save', key, e);
       notify('error', 'Could not save data to storage.');
+      return false;
     }
   }
 
-  let settings = Object.assign({}, DEFAULT_SETTINGS, loadJSON(NS + 'settings', {}));
-  function saveSettings() { saveJSON(NS + 'settings', settings); }
+  const pendingSaves = new Map();
+  const saveTimers = new Map();
 
-  function loadScrobbles() { return loadJSON(NS + 'scrobbles', []); }
-  function saveScrobbles(arr) { saveJSON(NS + 'scrobbles', arr); }
+  function scheduleSave(key, value, delay = 600) {
+    pendingSaves.set(key, value);
+    if (saveTimers.has(key)) clearTimeout(saveTimers.get(key));
+    saveTimers.set(key, setTimeout(() => flushSave(key), delay));
+    if (key !== GM_KEYS.cloud) scheduleCloudSync();
+  }
 
-  function loadStreakState() { return loadJSON(NS + 'streakState', {}); }
-  function saveStreakState(s) { saveJSON(NS + 'streakState', s); }
+  function flushSave(key) {
+    saveTimers.delete(key);
+    if (!pendingSaves.has(key)) return;
+    const value = pendingSaves.get(key);
+    pendingSaves.delete(key);
+    writeJSON(key, value);
+  }
+
+  function flushAllSaves() {
+    [...pendingSaves.keys()].forEach(flushSave);
+  }
+
+  let settings = Object.assign({}, DEFAULT_SETTINGS, loadJSON(GM_KEYS.settings, {}));
+  function saveSettings() { scheduleSave(GM_KEYS.settings, settings); }
+
+  let scrobbles = loadJSON(GM_KEYS.scrobbles, []);
+  let streakState = loadJSON(GM_KEYS.streakState, {});
+  let cloud = Object.assign({ token: '', username: '', avatarUrl: '', lastSyncAt: 0 }, loadJSON(GM_KEYS.cloud, {}));
+  function saveCloud() { scheduleSave(GM_KEYS.cloud, cloud); }
 
   function addScrobble(entry) {
-    const arr = loadScrobbles();
-    arr.push(entry);
-    if (arr.length > MAX_SCROBBLES) arr.splice(0, arr.length - MAX_SCROBBLES);
-    saveScrobbles(arr);
+    scrobbles.push(entry);
+    if (scrobbles.length > MAX_SCROBBLES) scrobbles.splice(0, scrobbles.length - MAX_SCROBBLES);
+    scheduleSave(GM_KEYS.scrobbles, scrobbles);
     checkStreaksAndNotify();
     if (panelOpen) refreshCurrentView();
     updateLiveNow();
+  }
+
+  const CLOUD_CLIENT_ID = 'tempo';
+  const CLOUD_BASE = 'https://airstudios.nl/api/v1/';
+  const CLOUD_AUTHORIZE_URL = `https://airstudios.nl/cloud/authorize.php?client_id=${CLOUD_CLIENT_ID}`;
+  const CLOUD_DATA_KEY = 'tempo_data';
+  const CLOUD_AUTO_SYNC_MS = 5 * 60 * 1000;
+  const CLOUD_DEBOUNCE_SYNC_MS = 30 * 1000;
+
+  function gmRequest(method, url, opts = {}) {
+    return new Promise((resolve, reject) => {
+      if (typeof GM_xmlhttpRequest !== 'function') {
+        reject(new Error('GM_xmlhttpRequest is not available.'));
+        return;
+      }
+      GM_xmlhttpRequest({
+        method,
+        url,
+        headers: opts.headers || {},
+        data: opts.body,
+        timeout: 15000,
+        onload: (res) => {
+          let json = null;
+          try { json = JSON.parse(res.responseText); } catch (e) { /* not JSON, fine */ }
+          resolve({ status: res.status, json, text: res.responseText });
+        },
+        onerror: () => reject(new Error('Network error contacting AIRSTUDIOS Cloud.')),
+        ontimeout: () => reject(new Error('AIRSTUDIOS Cloud request timed out.'))
+      });
+    });
+  }
+
+  function isCloudConnected() { return !!cloud.token; }
+
+  function cloudHeaders(extra) {
+  return Object.assign(
+    { Authorization: `Bearer ${cloud.token}`, 'X-AIRSTUDIOS-Token': cloud.token },
+    extra || {}
+  );
+ }
+
+  function sanitizedSettingsForCloud() {
+    const { userName, hotkey, themeId, themeScope, notifyErrors, notifyEvents, suppressNamePrompt } = settings;
+    return { userName, hotkey, themeId, themeScope, notifyErrors, notifyEvents, suppressNamePrompt };
+  }
+
+  async function verifyAndConnect(rawToken) {
+    const token = String(rawToken || '').trim();
+    if (!token) {
+      notify('error', 'Paste your AIRSTUDIOS Cloud token first.');
+      return false;
+    }
+    const priorToken = cloud.token;
+    cloud.token = token;
+    try {
+      const res = await gmRequest('GET', CLOUD_BASE + 'me.php', { headers: cloudHeaders() });
+        console.log("SERVER RESPONSE:", res);
+      if (res.status === 401) {
+        cloud.token = priorToken;
+        notify('error', 'That token was rejected. Double-check it and try again.');
+        return false;
+      }
+      if (res.status !== 200 || !res.json) {
+        cloud.token = priorToken;
+        notify('error', (res.json && res.json.message) || 'Could not verify that token.');
+        return false;
+      }
+      cloud.username = res.json.username || '';
+      cloud.avatarUrl = res.json.avatarUrl || res.json.avatar || res.json.avatar_url || '';
+      saveCloud();
+      notify('info', `Connected to AIRSTUDIOS Cloud as ${cloud.username || 'your account'}.`);
+      await cloudInitialSync();
+      refreshCurrentView();
+      return true;
+    } catch (e) {
+      cloud.token = priorToken;
+      notify('error', 'Connection failed: ' + e.message);
+      return false;
+    }
+  }
+
+  async function cloudInitialSync() {
+    try {
+      const res = await gmRequest('GET', CLOUD_BASE + `data.php?key=${CLOUD_DATA_KEY}`, { headers: cloudHeaders() });
+      if (res.status === 200 && res.json && res.json.value) {
+        const remote = res.json.value;
+        if (scrobbles.length === 0 && Array.isArray(remote.scrobbles) && remote.scrobbles.length) {
+          scrobbles = remote.scrobbles;
+          scheduleSave(GM_KEYS.scrobbles, scrobbles);
+          if (remote.streakState) {
+            streakState = remote.streakState;
+            scheduleSave(GM_KEYS.streakState, streakState);
+          }
+          notify('info', 'Imported your existing AIRSTUDIOS Cloud data.');
+        }
+      }
+    } catch (e) {
+
+    }
+    await cloudSyncPush(true);
+  }
+
+  async function cloudSyncPush(silent) {
+    if (!isCloudConnected()) return;
+    try {
+      const payload = { scrobbles, streakState, settings: sanitizedSettingsForCloud() };
+      const res = await gmRequest('POST', CLOUD_BASE + `data.php?key=${CLOUD_DATA_KEY}`, {
+        headers: cloudHeaders({ 'Content-Type': 'application/json' }),
+        body: JSON.stringify(payload)
+      });
+      if (res.status === 401) {
+        cloud.token = '';
+        cloud.username = '';
+        cloud.avatarUrl = '';
+        saveCloud();
+        notify('error', 'Your AIRSTUDIOS Cloud session was revoked. Please reconnect.');
+        refreshCurrentView();
+        return;
+      }
+      if (res.status === 413) {
+        if (!silent) notify('error', 'Your local history is too large for AIRSTUDIOS Cloud right now.');
+        return;
+      }
+      if (res.status !== 200) {
+        if (!silent) notify('error', (res.json && res.json.message) || 'Sync failed.');
+        return;
+      }
+      cloud.lastSyncAt = Date.now();
+      saveCloud();
+      if (!silent) notify('info', 'Synced with AIRSTUDIOS Cloud.');
+      refreshCurrentView();
+    } catch (e) {
+      if (!silent) notify('error', 'Sync failed: ' + e.message);
+    }
+  }
+
+  let cloudSyncTimer = null;
+  function scheduleCloudSync(delay = CLOUD_DEBOUNCE_SYNC_MS) {
+    if (!isCloudConnected()) return;
+    if (cloudSyncTimer) clearTimeout(cloudSyncTimer);
+    cloudSyncTimer = setTimeout(() => cloudSyncPush(true), delay);
+  }
+
+  function disconnectCloud() {
+    cloud = { token: '', username: '', avatarUrl: '', lastSyncAt: 0 };
+    scheduleSave(GM_KEYS.cloud, cloud);
+    notify('info', 'Disconnected from AIRSTUDIOS Cloud.');
+    refreshCurrentView();
+  }
+
+  function timeAgo(ts) {
+    if (!ts) return 'never';
+    const s = Math.max(0, Math.round((Date.now() - ts) / 1000));
+    if (s < 5) return 'just now';
+    if (s < 60) return `${s} sec${s === 1 ? '' : 's'} ago`;
+    const m = Math.floor(s / 60);
+    if (m < 60) return `${m} min${m === 1 ? '' : 's'} ago`;
+    const h = Math.floor(m / 60);
+    if (h < 24) return `${h} hour${h === 1 ? '' : 's'} ago`;
+    const d = Math.floor(h / 24);
+    return `${d} day${d === 1 ? '' : 's'} ago`;
   }
 
   const THEMES = {
@@ -617,7 +810,6 @@ function buildAppOverrideCSS(theme) {
   }
 
   function getArtistStreaks() {
-    const scrobbles = loadScrobbles();
     const artistDays = computeArtistDays(scrobbles);
     const artistArt = getArtistLastArt(scrobbles);
     const today = getLocalDateKey(Date.now());
@@ -635,9 +827,7 @@ function buildAppOverrideCSS(theme) {
   }
 
   function checkStreaksAndNotify() {
-    const scrobbles = loadScrobbles();
     const artistDays = computeArtistDays(scrobbles);
-    const state = loadStreakState();
     const today = getLocalDateKey(Date.now());
     const yesterday = getLocalDateKey(Date.now() - 86400000);
     let changed = false;
@@ -645,7 +835,7 @@ function buildAppOverrideCSS(theme) {
     artistDays.forEach((days, artist) => {
       const lastDay = days[days.length - 1];
       const streak = currentStreakLength(days);
-      const st = state[artist] || { streakAtLastNotify: 0, lapseWarnedDate: null };
+      const st = streakState[artist] || { streakAtLastNotify: 0, lapseWarnedDate: null };
 
       if (lastDay === today) {
         if (streak >= 2 && st.streakAtLastNotify < 2) {
@@ -664,10 +854,10 @@ function buildAppOverrideCSS(theme) {
         st.streakAtLastNotify = 0;
         changed = true;
       }
-      state[artist] = st;
+      streakState[artist] = st;
     });
 
-    if (changed) saveStreakState(state);
+    if (changed) scheduleSave(GM_KEYS.streakState, streakState);
   }
 
   function themeColor(varName, fallback) {
@@ -926,6 +1116,10 @@ function buildAppOverrideCSS(theme) {
     .ytt-streak-days { font-size: 18px; font-weight: 700; color: var(--ytt-accent); white-space: nowrap; }
     .ytt-streak-empty { color: var(--ytt-text2,#999); font-size: 13px; padding: 20px 0; text-align: center; }
 
+    .ytt-cloud-account-row { display:flex; align-items:center; gap: 12px; margin-bottom: 10px; }
+    .ytt-cloud-account-info { flex: 1; min-width: 0; }
+    .ytt-cloud-username { font-size: 14px; font-weight: 600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
     .ytt-name-modal-backdrop { position:absolute; inset:0; background: rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; z-index: 10; border-radius: 16px; }
     .ytt-name-modal { width: 280px; background: var(--ytt-surface,#1e1e1e); border: 1px solid var(--ytt-border,#333); border-radius: 14px; padding: 18px; }
     .ytt-name-modal h3 { margin: 0 0 4px; font-size: 16px; }
@@ -1097,7 +1291,6 @@ function buildAppOverrideCSS(theme) {
   }
 
   function renderHome(main) {
-    const scrobbles = loadScrobbles();
     const stats = computeStats(scrobbles);
     const name = settings.userName ? settings.userName : 'there';
 
@@ -1161,7 +1354,7 @@ function buildAppOverrideCSS(theme) {
   }
 
   function renderCharts(main) {
-    const stats = computeStats(loadScrobbles());
+    const stats = computeStats(scrobbles);
 
     main.appendChild(el('div', { class: 'ytt-header' }, [
       el('h1', { class: 'ytt-greeting' }, ['Charts']),
@@ -1297,6 +1490,57 @@ function buildAppOverrideCSS(theme) {
     notify('info', `Theme changed to ${THEMES[id].name}.`);
   }
 
+  function renderCloudBlock() {
+    const block = el('div', { class: 'ytt-panel-block' }, [el('h3', {}, ['Cloud Sync'])]);
+
+    if (!isCloudConnected()) {
+      const tokenInput = el('input', { class: 'ytt-input', type: 'text', placeholder: 'Paste your AIRSTUDIOS Cloud token', style: { display: 'none', marginTop: '10px' } });
+      const saveBtn = el('button', { class: 'ytt-share-btn' }, ['Save Token']);
+      saveBtn.style.display = 'none';
+
+      const connectBtn = el('button', { class: 'ytt-secondary-btn' }, ['Connect Account']);
+      connectBtn.addEventListener('click', () => {
+        window.open(CLOUD_AUTHORIZE_URL, '_blank', 'noopener');
+        tokenInput.style.display = 'block';
+        saveBtn.style.display = 'inline-block';
+        tokenInput.focus();
+      });
+
+      saveBtn.addEventListener('click', async () => {
+        const val = tokenInput.value.trim();
+        if (!val) return;
+        const original = saveBtn.textContent;
+        saveBtn.textContent = 'Connecting…';
+        saveBtn.disabled = true;
+        await verifyAndConnect(val);
+        saveBtn.disabled = false;
+        saveBtn.textContent = original;
+      });
+
+      block.appendChild(el('div', { class: 'ytt-subtext' }, ['No account']));
+      block.appendChild(el('div', { class: 'ytt-btn-row' }, [connectBtn]));
+      block.appendChild(tokenInput);
+      block.appendChild(el('div', { class: 'ytt-btn-row' }, [saveBtn]));
+    } else {
+      const avatar = el('div', { class: 'ytt-streak-avatar' }, [
+        cloud.avatarUrl
+          ? el('img', { src: cloud.avatarUrl, alt: cloud.username })
+          : el('div', { class: 'ytt-streak-avatar-fallback' }, [(cloud.username.trim()[0] || '?').toUpperCase()])
+      ]);
+      const info = el('div', { class: 'ytt-cloud-account-info' }, [
+        el('div', { class: 'ytt-cloud-username' }, [cloud.username || 'Connected']),
+        el('div', { class: 'ytt-subtext', id: 'ytt-cloud-last-sync' }, [`Last sync: ${timeAgo(cloud.lastSyncAt)}`])
+      ]);
+      block.appendChild(el('div', { class: 'ytt-cloud-account-row' }, [avatar, info]));
+      block.appendChild(el('div', { class: 'ytt-btn-row' }, [
+        el('button', { class: 'ytt-secondary-btn', onclick: () => cloudSyncPush(false) }, ['Sync Now']),
+        el('button', { class: 'ytt-danger-btn', onclick: disconnectCloud }, ['Disconnect'])
+      ]));
+    }
+
+    return block;
+  }
+
   function renderSettings(main) {
     main.appendChild(el('div', { class: 'ytt-header' }, [el('h1', { class: 'ytt-greeting' }, ['Settings'])]));
 
@@ -1305,6 +1549,8 @@ function buildAppOverrideCSS(theme) {
       el('input', { class: 'ytt-input', type: 'text', value: settings.userName, placeholder: 'e.g. barry', oninput: (e) => { settings.userName = e.target.value; saveSettings(); } }),
       checkboxRow("Don't ask for my name when opening the panel", settings.suppressNamePrompt, (v) => { settings.suppressNamePrompt = v; saveSettings(); })
     ]);
+
+    const cloudBlock = renderCloudBlock();
 
     const hotkeyBlock = el('div', { class: 'ytt-panel-block' }, [
       el('h3', {}, ['Panel Hotkey']),
@@ -1332,7 +1578,6 @@ function buildAppOverrideCSS(theme) {
       checkboxRow('Show event notifications (theme changes, streaks, etc.)', settings.notifyEvents, (v) => { settings.notifyEvents = v; saveSettings(); })
     ]);
 
-    const scrobbles = loadScrobbles();
     const dataBlock = el('div', { class: 'ytt-panel-block' }, [
       el('h3', {}, ['Data']),
       el('div', { class: 'ytt-subtext' }, [`${scrobbles.length} tracked plays stored locally.`]),
@@ -1349,6 +1594,7 @@ function buildAppOverrideCSS(theme) {
     ]);
 
     main.appendChild(nameBlock);
+    main.appendChild(cloudBlock);
     main.appendChild(hotkeyBlock);
     main.appendChild(notifBlock);
     main.appendChild(dataBlock);
@@ -1363,7 +1609,7 @@ function buildAppOverrideCSS(theme) {
 
   function exportData() {
     try {
-      const data = JSON.stringify({ scrobbles: loadScrobbles(), settings }, null, 2);
+      const data = JSON.stringify({ scrobbles, streakState, settings }, null, 2);
       const blob = new Blob([data], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const a = el('a', { href: url, download: `tempo-export-${Date.now()}.json` });
@@ -1382,8 +1628,9 @@ function buildAppOverrideCSS(theme) {
     reader.onload = () => {
       try {
         const parsed = JSON.parse(reader.result);
-        if (Array.isArray(parsed.scrobbles)) saveScrobbles(parsed.scrobbles);
-        if (parsed.settings) { settings = Object.assign({}, DEFAULT_SETTINGS, parsed.settings); saveSettings(); applyTheme(settings.themeId, settings.themeScope); }
+        if (Array.isArray(parsed.scrobbles)) { scrobbles = parsed.scrobbles; scheduleSave(GM_KEYS.scrobbles, scrobbles); }
+        if (parsed.streakState) { streakState = parsed.streakState; scheduleSave(GM_KEYS.streakState, streakState); }
+        if (parsed.settings) { settings = Object.assign({}, DEFAULT_SETTINGS, parsed.settings); scheduleSave(GM_KEYS.settings, settings); applyTheme(settings.themeId, settings.themeScope); }
         notify('info', 'Import complete.');
         refreshCurrentView();
       } catch (err) {
@@ -1395,8 +1642,10 @@ function buildAppOverrideCSS(theme) {
 
   function clearData() {
     if (!confirm('This will permanently delete all tracked listening data. Continue?')) return;
-    saveScrobbles([]);
-    saveStreakState({});
+    scrobbles = [];
+    streakState = {};
+    scheduleSave(GM_KEYS.scrobbles, scrobbles);
+    scheduleSave(GM_KEYS.streakState, streakState);
     notify('info', 'All tracked data cleared.');
     refreshCurrentView();
   }
@@ -1410,7 +1659,7 @@ function buildAppOverrideCSS(theme) {
 
   function exportShareImage() {
     try {
-      const stats = computeStats(loadScrobbles());
+      const stats = computeStats(scrobbles);
       const theme = THEMES[settings.themeId] || THEMES.moondark;
       const w = 1080, h = 1350;
       const canvas = document.createElement('canvas');
@@ -1547,7 +1796,13 @@ function buildAppOverrideCSS(theme) {
     document.addEventListener('keydown', onKeydown);
     setInterval(trackTick, 1000);
     setInterval(checkStreaksAndNotify, STREAK_CHECK_INTERVAL_MS);
-    window.addEventListener('beforeunload', commitCurrent);
+    setInterval(() => { if (isCloudConnected()) cloudSyncPush(true); }, CLOUD_AUTO_SYNC_MS);
+    setInterval(() => {
+      if (!panelOpen || activeView !== 'settings' || !shadowRoot) return;
+      const lastSyncEl = shadowRoot.getElementById('ytt-cloud-last-sync');
+      if (lastSyncEl) lastSyncEl.textContent = `Last sync: ${timeAgo(cloud.lastSyncAt)}`;
+    }, 5000);
+    window.addEventListener('beforeunload', () => { commitCurrent(); flushAllSaves(); });
 
     if (typeof GM_registerMenuCommand === 'function') {
       GM_registerMenuCommand('Open Tempo panel', togglePanel);
@@ -1556,6 +1811,7 @@ function buildAppOverrideCSS(theme) {
     ensureUI();
     if (settings.themeScope !== 'panel') applyAppReskin(THEMES[settings.themeId] || THEMES.moondark);
     checkStreaksAndNotify();
+    if (isCloudConnected()) cloudSyncPush(true);
   }
 
   if (document.readyState === 'complete' || document.readyState === 'interactive') {
