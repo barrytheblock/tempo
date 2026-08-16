@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         tempo
 // @namespace    https://airstudios.nl/
-// @version      1.1.0
-// @description  YouTube Music statistic tracker & themes, with AIRSTUDIOS Cloud sync.
+// @version      1.2.0
+// @description  YouTube Music statistic tracker & themes, with AIRSTUDIOS Cloud save/load.
 // @author       barrytheblock
 // @match        https://music.youtube.com/*
 // @icon         data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjggMjkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjgiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iNiIgeT0iMSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMyIgeT0iMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iNSIgeT0iMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMyIgeT0iNCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iNSIgeT0iNCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTEiIHk9IjQiIHdpZHRoPSI2IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIiIHk9IjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjE0IiB5PSI1IiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxIiB5PSI2IiB3aWR0aD0iNyIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxNCIgeT0iNiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMSIgeT0iNyIgd2lkdGg9IjciIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTEiIHk9IjciIHdpZHRoPSI2IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjExIiB5PSI4IiB3aWR0aD0iNiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMCIgeT0iOSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjAiIHk9IjEwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxOSIgeT0iMTEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIxIiB5PSIxMSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTEiIHk9IjEyIiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxOCIgeT0iMTIiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIxIiB5PSIxMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTAiIHk9IjEzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxMiIgeT0iMTMiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjE3IiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjEiIHk9IjEzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI5IiB5PSIxNCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTIiIHk9IjE0IiB3aWR0aD0iNiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMSIgeT0iMTQiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjYiIHk9IjE1IiB3aWR0aD0iMyIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxMyIgeT0iMTUiIHdpZHRoPSI0IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIxIiB5PSIxNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjMiIHk9IjE1IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI0IiB5PSIxNiIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iOCIgeT0iMTYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjE0IiB5PSIxNiIgd2lkdGg9IjMiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjIiIHk9IjE2IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyNCIgeT0iMTYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjMiIHk9IjE3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI3IiB5PSIxNyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjMiIHk9IjE3IiB3aWR0aD0iMyIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyIiB5PSIxOCIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iNyIgeT0iMTgiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIzIiB5PSIxOCIgd2lkdGg9IjMiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMiIgeT0iMTkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjciIHk9IjE5IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMyIgeT0iMTkiIHdpZHRoPSIzIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjEiIHk9IjIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI3IiB5PSIyMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjIiIHk9IjIwIiB3aWR0aD0iNSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIwIiB5PSIyMSIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iNyIgeT0iMjEiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjEwIiB5PSIyMSIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjAiIHk9IjIxIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyNSIgeT0iMjEiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjAiIHk9IjIyIiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI4IiB5PSIyMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTAiIHk9IjIyIiB3aWR0aD0iNSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxOSIgeT0iMjIiIHdpZHRoPSIzIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIzIiB5PSIyMiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjUiIHk9IjIyIiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIwIiB5PSIyMyIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iOCIgeT0iMjMiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjEyIiB5PSIyMyIgd2lkdGg9IjQiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTkiIHk9IjIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMyIgeT0iMjMiIHdpZHRoPSI1IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjAiIHk9IjI0IiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSI5IiB5PSIyNCIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTYiIHk9IjI0IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMiIgeT0iMjQiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjQiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMCIgeT0iMjUiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjEwIiB5PSIyNSIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTgiIHk9IjI1IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMCIgeT0iMjUiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjIzIiB5PSIyNSIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjYiIHk9IjI1IiB3aWR0aD0iMiIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxIiB5PSIyNiIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMTEiIHk9IjI2IiB3aWR0aD0iOSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyMiIgeT0iMjYiIHdpZHRoPSIyIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjI2IiB5PSIyNiIgd2lkdGg9IjIiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMiIgeT0iMjciIHdpZHRoPSI3IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjE1IiB5PSIyNyIgd2lkdGg9IjUiIGhlaWdodD0iMSIgZmlsbD0iY3VycmVudENvbG9yIi8+PHJlY3QgeD0iMjIiIHk9IjI3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIyNSIgeT0iMjciIHdpZHRoPSIzIiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxyZWN0IHg9IjgiIHk9IjI4IiB3aWR0aD0iOSIgaGVpZ2h0PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cmVjdCB4PSIxOSIgeT0iMjgiIHdpZHRoPSI4IiBoZWlnaHQ9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjwvc3ZnPg==
@@ -28,7 +28,8 @@
     themeScope: 'panel',
     notifyErrors: true,
     notifyEvents: true,
-    suppressNamePrompt: false
+    suppressNamePrompt: false,
+    autoSaveMinutes: 5
   };
 
 
@@ -68,7 +69,6 @@
     pendingSaves.set(key, value);
     if (saveTimers.has(key)) clearTimeout(saveTimers.get(key));
     saveTimers.set(key, setTimeout(() => flushSave(key), delay));
-    if (key !== GM_KEYS.cloud) scheduleCloudSync();
   }
 
   function flushSave(key) {
@@ -88,7 +88,7 @@
 
   let scrobbles = loadJSON(GM_KEYS.scrobbles, []);
   let streakState = loadJSON(GM_KEYS.streakState, {});
-  let cloud = Object.assign({ token: '', username: '', avatarUrl: '', lastSyncAt: 0 }, loadJSON(GM_KEYS.cloud, {}));
+  let cloud = Object.assign({ token: '', username: '', avatarUrl: '', lastSyncAt: 0, lastLoadAt: 0, pendingDisconnect: false }, loadJSON(GM_KEYS.cloud, {}));
   function saveCloud() { scheduleSave(GM_KEYS.cloud, cloud); }
 
   function addScrobble(entry) {
@@ -103,9 +103,9 @@
   const CLOUD_CLIENT_ID = 'tempo';
   const CLOUD_BASE = 'https://airstudios.nl/api/v1/';
   const CLOUD_AUTHORIZE_URL = `https://airstudios.nl/cloud/authorize.php?client_id=${CLOUD_CLIENT_ID}`;
+  const CLOUD_DISCONNECT_URL = 'https://airstudios.nl/cloud';
   const CLOUD_DATA_KEY = 'tempo_data';
-  const CLOUD_AUTO_SYNC_MS = 5 * 60 * 1000;
-  const CLOUD_DEBOUNCE_SYNC_MS = 30 * 1000;
+  const CLOUD_DISCONNECT_POLL_MS = 5000;
 
   function gmRequest(method, url, opts = {}) {
     return new Promise((resolve, reject) => {
@@ -121,7 +121,7 @@
         timeout: 15000,
         onload: (res) => {
           let json = null;
-          try { json = JSON.parse(res.responseText); } catch (e) { /* not JSON, fine */ }
+          try { json = JSON.parse(res.responseText); } catch (e) {  }
           resolve({ status: res.status, json, text: res.responseText });
         },
         onerror: () => reject(new Error('Network error contacting AIRSTUDIOS Cloud.')),
@@ -154,7 +154,6 @@
     cloud.token = token;
     try {
       const res = await gmRequest('GET', CLOUD_BASE + 'me.php', { headers: cloudHeaders() });
-        console.log("SERVER RESPONSE:", res);
       if (res.status === 401) {
         cloud.token = priorToken;
         notify('error', 'That token was rejected. Double-check it and try again.');
@@ -167,9 +166,11 @@
       }
       cloud.username = res.json.username || '';
       cloud.avatarUrl = res.json.avatarUrl || res.json.avatar || res.json.avatar_url || '';
+      cloud.pendingDisconnect = false;
       saveCloud();
       notify('info', `Connected to AIRSTUDIOS Cloud as ${cloud.username || 'your account'}.`);
       await cloudInitialSync();
+      setupAutoSaveTimer();
       refreshCurrentView();
       return true;
     } catch (e) {
@@ -191,13 +192,14 @@
             streakState = remote.streakState;
             scheduleSave(GM_KEYS.streakState, streakState);
           }
+          cloud.lastLoadAt = Date.now();
+          saveCloud();
           notify('info', 'Imported your existing AIRSTUDIOS Cloud data.');
         }
       }
     } catch (e) {
 
     }
-    await cloudSyncPush(true);
   }
 
   async function cloudSyncPush(silent) {
@@ -213,6 +215,7 @@
         cloud.username = '';
         cloud.avatarUrl = '';
         saveCloud();
+        setupAutoSaveTimer();
         notify('error', 'Your AIRSTUDIOS Cloud session was revoked. Please reconnect.');
         refreshCurrentView();
         return;
@@ -222,29 +225,112 @@
         return;
       }
       if (res.status !== 200) {
-        if (!silent) notify('error', (res.json && res.json.message) || 'Sync failed.');
+        if (!silent) notify('error', (res.json && res.json.message) || 'Save failed.');
         return;
       }
       cloud.lastSyncAt = Date.now();
       saveCloud();
-      if (!silent) notify('info', 'Synced with AIRSTUDIOS Cloud.');
+      if (!silent) notify('info', 'Saved to AIRSTUDIOS Cloud.');
       refreshCurrentView();
     } catch (e) {
-      if (!silent) notify('error', 'Sync failed: ' + e.message);
+      if (!silent) notify('error', 'Save failed: ' + e.message);
     }
   }
 
-  let cloudSyncTimer = null;
-  function scheduleCloudSync(delay = CLOUD_DEBOUNCE_SYNC_MS) {
+  async function cloudLoad() {
     if (!isCloudConnected()) return;
-    if (cloudSyncTimer) clearTimeout(cloudSyncTimer);
-    cloudSyncTimer = setTimeout(() => cloudSyncPush(true), delay);
+    if (!confirm('This will replace your local data with what is stored in AIRSTUDIOS Cloud. Continue?')) return;
+    try {
+      const res = await gmRequest('GET', CLOUD_BASE + `data.php?key=${CLOUD_DATA_KEY}`, { headers: cloudHeaders() });
+      if (res.status === 401) {
+        cloud.token = '';
+        cloud.username = '';
+        cloud.avatarUrl = '';
+        saveCloud();
+        setupAutoSaveTimer();
+        notify('error', 'Your AIRSTUDIOS Cloud session was revoked. Please reconnect.');
+        refreshCurrentView();
+        return;
+      }
+      if (res.status !== 200 || !res.json || !res.json.value) {
+        notify('error', (res.json && res.json.message) || 'Could not load data.');
+        return;
+      }
+      const remote = res.json.value;
+      if (Array.isArray(remote.scrobbles)) {
+        scrobbles = remote.scrobbles;
+        scheduleSave(GM_KEYS.scrobbles, scrobbles);
+      }
+      if (remote.streakState) {
+        streakState = remote.streakState;
+        scheduleSave(GM_KEYS.streakState, streakState);
+      }
+      if (remote.settings) {
+        settings = Object.assign({}, DEFAULT_SETTINGS, settings, remote.settings);
+        scheduleSave(GM_KEYS.settings, settings);
+        applyTheme(settings.themeId, settings.themeScope);
+      }
+      cloud.lastLoadAt = Date.now();
+      saveCloud();
+      notify('info', 'Loaded data from AIRSTUDIOS Cloud.');
+      refreshCurrentView();
+    } catch (e) {
+      notify('error', 'Load failed: ' + e.message);
+    }
   }
 
-  function disconnectCloud() {
-    cloud = { token: '', username: '', avatarUrl: '', lastSyncAt: 0 };
-    scheduleSave(GM_KEYS.cloud, cloud);
-    notify('info', 'Disconnected from AIRSTUDIOS Cloud.');
+  let autoSaveTimer = null;
+  function setupAutoSaveTimer() {
+    if (autoSaveTimer) { clearInterval(autoSaveTimer); autoSaveTimer = null; }
+    if (!isCloudConnected() || cloud.pendingDisconnect || !settings.autoSaveMinutes) return;
+    autoSaveTimer = setInterval(() => cloudSyncPush(true), settings.autoSaveMinutes * 60 * 1000);
+  }
+
+  function autoSaveLabel(v) {
+    return v === 0 ? 'Off' : `Every ${v} min`;
+  }
+
+  let disconnectPollTimer = null;
+  function startDisconnectPoll() {
+    if (disconnectPollTimer) clearInterval(disconnectPollTimer);
+    disconnectPollTimer = setInterval(checkDisconnectStatus, CLOUD_DISCONNECT_POLL_MS);
+  }
+  function stopDisconnectPoll() {
+    if (disconnectPollTimer) { clearInterval(disconnectPollTimer); disconnectPollTimer = null; }
+  }
+
+  async function checkDisconnectStatus() {
+    if (!cloud.pendingDisconnect || !cloud.token) { stopDisconnectPoll(); return; }
+    try {
+      const res = await gmRequest('GET', CLOUD_BASE + 'me.php', { headers: cloudHeaders() });
+      if (res.status === 401) {
+        stopDisconnectPoll();
+        cloud = { token: '', username: '', avatarUrl: '', lastSyncAt: 0, lastLoadAt: 0, pendingDisconnect: false };
+        saveCloud();
+        setupAutoSaveTimer();
+        notify('info', 'AIRSTUDIOS Cloud access removed.');
+        refreshCurrentView();
+      }
+    } catch (e) {
+
+    }
+  }
+
+  function initiateDisconnect() {
+    window.open(CLOUD_DISCONNECT_URL, '_blank', 'noopener');
+    cloud.pendingDisconnect = true;
+    saveCloud();
+    setupAutoSaveTimer();
+    startDisconnectPoll();
+    notify('info', 'Remove Tempo access on the AIRSTUDIOS Cloud page to finish disconnecting.');
+    refreshCurrentView();
+  }
+
+  function cancelDisconnect() {
+    cloud.pendingDisconnect = false;
+    saveCloud();
+    stopDisconnectPoll();
+    setupAutoSaveTimer();
     refreshCurrentView();
   }
 
@@ -472,7 +558,6 @@ function buildAppOverrideCSS(theme) {
       fill: ${outerPrimary} !important;
     }
 
-    /* FIX: Now playing bar track title and secondary details */
     ytmusic-player-bar .content-info-wrapper yt-formatted-string,
     ytmusic-player-bar .title,
     ytmusic-player-bar .byline {
@@ -483,7 +568,6 @@ function buildAppOverrideCSS(theme) {
       color: ${outerSecondary} !important;
     }
 
-    /* Fix all text elements inside the inner content area */
     ytmusic-app ytmusic-browse-response yt-formatted-string,
     ytmusic-app ytmusic-browse-response span,
     ytmusic-app ytmusic-browse-response h1,
@@ -498,13 +582,11 @@ function buildAppOverrideCSS(theme) {
       color: ${v.accent2} !important;
     }
 
-    /* Subtitles and secondary text descriptions */
     ytmusic-app .secondary, ytmusic-app .subtext, ytmusic-app .byline,
     ytmusic-app .subtitle, ytmusic-app .description, ytmusic-app .view-all {
       color: ${innerSecondary} !important;
     }
 
-    /* Keep album art and thumbnails cleanly visible */
     ytmusic-app yt-img-shadow,
     ytmusic-app yt-image,
     ytmusic-app ytmusic-thumbnail-renderer,
@@ -1119,6 +1201,9 @@ function buildAppOverrideCSS(theme) {
     .ytt-cloud-account-row { display:flex; align-items:center; gap: 12px; margin-bottom: 10px; }
     .ytt-cloud-account-info { flex: 1; min-width: 0; }
     .ytt-cloud-username { font-size: 14px; font-weight: 600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .ytt-cloud-pending { font-size: 12px; color: var(--ytt-text2,#999); background: var(--ytt-bg2,#222); border: 1px solid var(--ytt-border,#333); border-radius: 8px; padding: 10px; line-height: 1.4; }
+    .ytt-slider-row { display:flex; flex-direction:column; gap: 6px; margin-top: 12px; }
+    .ytt-slider { width: 100%; accent-color: var(--ytt-accent, #8b5cf6); }
 
     .ytt-name-modal-backdrop { position:absolute; inset:0; background: rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; z-index: 10; border-radius: 16px; }
     .ytt-name-modal { width: 280px; background: var(--ytt-surface,#1e1e1e); border: 1px solid var(--ytt-border,#333); border-radius: 14px; padding: 18px; }
@@ -1521,22 +1606,53 @@ function buildAppOverrideCSS(theme) {
       block.appendChild(el('div', { class: 'ytt-btn-row' }, [connectBtn]));
       block.appendChild(tokenInput);
       block.appendChild(el('div', { class: 'ytt-btn-row' }, [saveBtn]));
-    } else {
-      const avatar = el('div', { class: 'ytt-streak-avatar' }, [
-        cloud.avatarUrl
-          ? el('img', { src: cloud.avatarUrl, alt: cloud.username })
-          : el('div', { class: 'ytt-streak-avatar-fallback' }, [(cloud.username.trim()[0] || '?').toUpperCase()])
-      ]);
-      const info = el('div', { class: 'ytt-cloud-account-info' }, [
-        el('div', { class: 'ytt-cloud-username' }, [cloud.username || 'Connected']),
-        el('div', { class: 'ytt-subtext', id: 'ytt-cloud-last-sync' }, [`Last sync: ${timeAgo(cloud.lastSyncAt)}`])
-      ]);
-      block.appendChild(el('div', { class: 'ytt-cloud-account-row' }, [avatar, info]));
-      block.appendChild(el('div', { class: 'ytt-btn-row' }, [
-        el('button', { class: 'ytt-secondary-btn', onclick: () => cloudSyncPush(false) }, ['Sync Now']),
-        el('button', { class: 'ytt-danger-btn', onclick: disconnectCloud }, ['Disconnect'])
-      ]));
+      return block;
     }
+
+    const avatar = el('div', { class: 'ytt-streak-avatar' }, [
+      cloud.avatarUrl
+        ? el('img', { src: cloud.avatarUrl, alt: cloud.username })
+        : el('div', { class: 'ytt-streak-avatar-fallback' }, [(cloud.username.trim()[0] || '?').toUpperCase()])
+    ]);
+    const info = el('div', { class: 'ytt-cloud-account-info' }, [
+      el('div', { class: 'ytt-cloud-username' }, [cloud.username || 'Connected']),
+      el('div', { class: 'ytt-subtext', id: 'ytt-cloud-last-sync' }, [`Last saved: ${timeAgo(cloud.lastSyncAt)} • Last loaded: ${timeAgo(cloud.lastLoadAt)}`])
+    ]);
+    block.appendChild(el('div', { class: 'ytt-cloud-account-row' }, [avatar, info]));
+
+    if (cloud.pendingDisconnect) {
+      block.appendChild(el('div', { class: 'ytt-cloud-pending' }, [
+        'Waiting for you to remove Tempo access on the AIRSTUDIOS Cloud page. Go to the tab that opened, remove access there, and this will update automatically once removal is detected.'
+      ]));
+      block.appendChild(el('div', { class: 'ytt-btn-row' }, [
+        el('button', { class: 'ytt-secondary-btn', onclick: () => { window.open(CLOUD_DISCONNECT_URL, '_blank', 'noopener'); } }, ['Open AIRSTUDIOS Cloud']),
+        el('button', { class: 'ytt-secondary-btn', onclick: checkDisconnectStatus }, ['Check Now']),
+        el('button', { class: 'ytt-danger-btn', onclick: cancelDisconnect }, ['Cancel'])
+      ]));
+      return block;
+    }
+
+    block.appendChild(el('div', { class: 'ytt-btn-row' }, [
+      el('button', { class: 'ytt-secondary-btn', onclick: () => cloudSyncPush(false) }, ['Save']),
+      el('button', { class: 'ytt-secondary-btn', onclick: cloudLoad }, ['Load']),
+      el('button', { class: 'ytt-danger-btn', onclick: initiateDisconnect }, ['Disconnect'])
+    ]));
+
+    const sliderLabel = el('div', { class: 'ytt-subtext' }, [autoSaveLabel(settings.autoSaveMinutes)]);
+    const slider = el('input', { class: 'ytt-slider', type: 'range', min: '0', max: '60', step: '5', value: String(settings.autoSaveMinutes) });
+    slider.addEventListener('input', (e) => { sliderLabel.textContent = autoSaveLabel(parseInt(e.target.value, 10)); });
+    slider.addEventListener('change', (e) => {
+      const v = parseInt(e.target.value, 10);
+      settings.autoSaveMinutes = v;
+      saveSettings();
+      setupAutoSaveTimer();
+      notify('info', v === 0 ? 'Auto save turned off.' : `Auto save set to every ${v} minutes.`);
+    });
+    block.appendChild(el('div', { class: 'ytt-slider-row' }, [
+      el('div', { class: 'ytt-subtext' }, ['Auto Save']),
+      slider,
+      sliderLabel
+    ]));
 
     return block;
   }
@@ -1796,11 +1912,10 @@ function buildAppOverrideCSS(theme) {
     document.addEventListener('keydown', onKeydown);
     setInterval(trackTick, 1000);
     setInterval(checkStreaksAndNotify, STREAK_CHECK_INTERVAL_MS);
-    setInterval(() => { if (isCloudConnected()) cloudSyncPush(true); }, CLOUD_AUTO_SYNC_MS);
     setInterval(() => {
       if (!panelOpen || activeView !== 'settings' || !shadowRoot) return;
       const lastSyncEl = shadowRoot.getElementById('ytt-cloud-last-sync');
-      if (lastSyncEl) lastSyncEl.textContent = `Last sync: ${timeAgo(cloud.lastSyncAt)}`;
+      if (lastSyncEl) lastSyncEl.textContent = `Last saved: ${timeAgo(cloud.lastSyncAt)} • Last loaded: ${timeAgo(cloud.lastLoadAt)}`;
     }, 5000);
     window.addEventListener('beforeunload', () => { commitCurrent(); flushAllSaves(); });
 
@@ -1811,7 +1926,8 @@ function buildAppOverrideCSS(theme) {
     ensureUI();
     if (settings.themeScope !== 'panel') applyAppReskin(THEMES[settings.themeId] || THEMES.moondark);
     checkStreaksAndNotify();
-    if (isCloudConnected()) cloudSyncPush(true);
+    setupAutoSaveTimer();
+    if (isCloudConnected() && cloud.pendingDisconnect) startDisconnectPoll();
   }
 
   if (document.readyState === 'complete' || document.readyState === 'interactive') {
